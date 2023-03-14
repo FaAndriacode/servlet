@@ -5,6 +5,8 @@
 package etu1763.framework.servlet;
 
 import java.io.IOException;
+import etu1763.framework.Mapping;
+import java.util.HashMap;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -15,6 +17,7 @@ import javax.servlet.http.HttpServletResponse;
  * @author andriniaina
  */
 public class Front_Servelet extends HttpServlet {
+    HashMap<String, Mapping> MappingUrls;
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
